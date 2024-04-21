@@ -74,21 +74,21 @@ while run:
     print("3 : Book ticket")
     print("4 : Exit")
 
-    ch=int(input("\nEnter Option: "))
+    op=int(input("\nEnter Option: "))
 
     
 
-    if ch == 1:
+    if op == 1:
        hall1.view_show_list()
-    elif ch == 2:
+    elif op == 2:
        show_id = input('\nEnter show id: ')
        hall1.view_available_seats(show_id)
-    elif ch == 3:
+    elif op == 3:
        show_id = input("Enter show ID: ")
        row = int(input("Enter seat row: "))
        col = int(input("Enter seat col: "))
        hall1.book_seats(show_id, [(row, col)])
-    elif ch == 4:
+    elif op == 4:
         run = False
 
 
